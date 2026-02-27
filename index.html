@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boulevar Grill</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div class="hero-background"></div>
+
+<header class="fixed-top w-100 z-3" id="miHeader">
+    <nav class="navbar navbar-expand-md navbar-dark p-3">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#inicio">RESTAURANTE JS</a>
+
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="menuNavegacion">
+                <ul class="navbar-nav gap-4 text-center mt-3 mt-md-0">
+                    <li class="nav-item">
+                        <a id="btn-inicio" class="nav-link text-white fw-bold text-uppercase" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-bold text-uppercase" href="#seccion-menu">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-bold text-uppercase" href="#seccion-reservas">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+    <main>
+        <section id="inicio" class="vh-100 position-relative d-flex align-items-center justify-content-center text-center">
+            <div class="hero-content text-white">
+                <h1 class="display-1 fw-bold mb-2">Restaurante JS</h1>
+                <h2 class="fs-3 fw-light text-uppercase tracking-widest">Sabores de Autor</h2>
+            </div>
+        </section>
+
+        <section id="seccion-menu" class="bg-light" style="padding-top: 100px; padding-bottom: 80px;">
+            <div class="container relative">
+                <h2 class="text-dark display-4 text-center mb-5">Nuestros Platos Estelares</h2>
+
+                <div id="carruselMenu" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner px-4">
+
+                        <div class="carousel-item active">
+                            <div class="row g-4">
+                                <div class="col-12 col-md-6 col-lg-3">
+                                    <div class="card h-100 tarjeta-plato">
+                                        <img src="assets/media/img1.jpg" class="card-img-top" alt="Plato 1">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <h5 class="card-title fw-bold">Ceviche de la Casa</h5>
+                                            <span class="precio-destacado mt-auto">$12.500</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3">
+                                    <div class="card h-100 tarjeta-plato">
+                                        <img src="assets/media/img1.jpg" class="card-img-top" alt="Plato 2">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <h5 class="card-title fw-bold">Lomo Saltado</h5>
+                                            <span class="precio-destacado mt-auto">$14.900</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3">
+                                    <div class="card h-100 tarjeta-plato">
+                                        <img src="assets/media/img1.jpg" class="card-img-top" alt="Plato 3">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <h5 class="card-title fw-bold">Risotto de Hongos</h5>
+                                            <span class="precio-destacado mt-auto">$11.000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3">
+                                    <div class="card h-100 tarjeta-plato">
+                                        <img src="assets/media/img1.jpg" class="card-img-top" alt="Plato 4">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <h5 class="card-title fw-bold">Salmón al Horno</h5>
+                                            <span class="precio-destacado mt-auto">$15.500</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row g-4">
+                                <div class="col-12 col-md-6 col-lg-3">
+                                    <div class="card h-100 tarjeta-plato">
+                                        <img src="assets/media/img1.jpg" class="card-img-top" alt="Plato 5">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <h5 class="card-title fw-bold">Pastel de Choclo</h5>
+                                            <span class="precio-destacado mt-auto">$9.500</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3">
+                                    <div class="card h-100 tarjeta-plato">
+                                        <img src="assets/media/img1.jpg" class="card-img-top" alt="Plato 6">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <h5 class="card-title fw-bold">Entraña a la Parrilla</h5>
+                                            <span class="precio-destacado mt-auto">$18.000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3">
+                                    <div class="card h-100 tarjeta-plato">
+                                        <img src="assets/media/img1.jpg" class="card-img-top" alt="Plato 7">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <h5 class="card-title fw-bold">Atún Sellado</h5>
+                                            <span class="precio-destacado mt-auto">$16.500</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3">
+                                    <div class="card h-100 tarjeta-plato">
+                                        <img src="assets/media/img1.jpg" class="card-img-top" alt="Plato 8">
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <h5 class="card-title fw-bold">Tiramisú Casero</h5>
+                                            <span class="precio-destacado mt-auto">$5.500</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carruselMenu" data-bs-slide="prev" style="width: 5%;">
+                        <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carruselMenu" data-bs-slide="next" style="width: 5%;">
+                        <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="seccion-reservas" class="seccion-cafe-rustico" style="min-height: 80vh; padding-top: 100px; padding-bottom: 100px;">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-4 text-white text-lg-start text-center mb-5 mb-lg-0 info-minimalista">
+                        <h3 class="display-6 fw-light mb-4">Visítanos</h3>
+                        <p class="fs-5 fw-light mb-2"><i class="bi bi-geo-alt me-2"></i>Av. Gastronómica 1234, Ciudad</p>
+                        <p class="fs-5 fw-light mb-2"><i class="bi bi-telephone me-2"></i>+56 9 1234 5678</p>
+                        <p class="fs-5 fw-light mb-4"><i class="bi bi-envelope me-2"></i>reservas@restaurantejs.com</p>
+                        <p class="fw-light opacity-75 mb-4">Martes a Domingo<br>12:00 PM - 23:30 PM</p>
+
+                        <div class="d-flex justify-content-center justify-content-lg-start gap-4 mt-5">
+                            <a href="https://instagram.com" target="_blank" class="icono-social"><i class="bi bi-instagram"></i></a>
+                            <a href="https://facebook.com" target="_blank" class="icono-social"><i class="bi bi-facebook"></i></a>
+                            <a href="https://wa.me/56912345678" target="_blank" class="icono-social"><i class="bi bi-whatsapp"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="formulario-reserva p-4 p-md-5 mx-auto">
+                            <h3 class="text-white fw-light text-center mb-4">Haz tu Reserva</h3>
+
+                            <form>
+                                <div class="mb-4">
+                                    <input type="text" class="form-control form-control-lg input-minimalista" placeholder="Nombre completo" required>
+                                </div>
+
+                                <div class="row mb-4">
+                                    <div class="col-md-6 mb-4 mb-md-0">
+                                        <input type="tel" class="form-control form-control-lg input-minimalista" placeholder="Teléfono" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" class="form-control form-control-lg input-minimalista" placeholder="Correo electrónico" required>
+                                    </div>
+                                </div>
+
+                                <div class="mb-5">
+                                    <select class="form-select form-select-lg input-minimalista text-white" required>
+                                        <option value="" selected disabled hidden>¿Para cuántas personas?</option>
+                                        <option value="1" class="text-dark">Mesa para 1 a 2</option>
+                                        <option value="2" class="text-dark">Mesa para 3 a 4</option>
+                                        <option value="3" class="text-dark">Mesa para 5 o más</option>
+                                    </select>
+                                </div>
+
+                                <button type="submit" class="btn btn-outline-light btn-lg w-100 fw-light text-uppercase tracking-widest">Confirmar Mesa</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+<footer class="text-center text-white py-4" style="background-color: #2b2222;">
+    <div class="container">
+        <p class="mb-0 fw-light opacity-75" style="font-size: 0.9rem;">
+            &copy; 2026 Restaurante JS. Todos los derechos reservados.
+        </p>
+    </div>
+</footer>
+
+
+<script src="scripts/syntax.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
