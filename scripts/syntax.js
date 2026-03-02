@@ -7,19 +7,46 @@ window.addEventListener('scroll', function() {
     let opacity = 1 - (scrollPos / 600);
     heroBg.style.opacity = opacity >= 0 ? opacity : 0;
 
-    // Efecto del Navbar oscuro
     if (scrollPos > 100) {
         header.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
     } else {
         header.style.backgroundColor = "transparent";
     }
 
-    // El Botón "Inicio" hace pop up usando clases CSS
     if (scrollPos > 500) {
-        // Agrega la clase que lo hace visible
         btnInicio.classList.add('mostrar-btn');
     } else {
-        // Quita la clase y vuelve a su estado inicial oculto
         btnInicio.classList.remove('mostrar-btn');
     }
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+
+    const formReserva = document.getElementById('form-reserva');
+    const telefonoInput = document.getElementById('telefono');
+    const prefijo = '+56 9 ';
+
+
+    telefonoInput.addEventListener('input', function(e) {
+        if (!this.value.startsWith(prefijo)) {
+
+            this.value = prefijo;
+        }
+    });
+
+
+    formReserva.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+
+        alert('¡Se agendó exitosamente!');
+
+
+        formReserva.reset();
+
+
+        telefonoInput.value = prefijo;
+    });
 });

@@ -1,6 +1,8 @@
+
 html {
     scroll-behavior: smooth;
 }
+
 
 .hero-background {
     position: fixed;
@@ -14,65 +16,90 @@ html {
     z-index: -1;
 }
 
+
 #miHeader {
     transition: background-color 0.4s ease;
 }
+
 #btn-inicio {
     opacity: 0;
     visibility: hidden;
     transition: all 0.4s ease;
 }
 
-
 .mostrar-btn {
     opacity: 1 !important;
     visibility: visible !important;
 }
-/* --- TARJETAS DE PLATOS (CARRUSEL) --- */
+
+
+.seccion-menu-rustico {
+    background-color: #241a1a;
+}
+
+.cuadro-menu-rustico {
+    background-color: #3b2f2f;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+
 .tarjeta-plato {
-    border: none;
+    border: 1px solid #4a3838;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    background-color: #ffffff;
-    transition: transform 0.3s ease;
+    background-color: #1a1414;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .tarjeta-plato:hover {
     transform: translateY(-8px);
+    border-color: #e67e22;
 }
 
 .tarjeta-plato img {
-    height: 220px;
+    height: 180px;
     object-fit: cover;
+    border-bottom: 2px solid #3b2f2f;
+}
+
+.tarjeta-plato .card-title {
+    color: #f3e5d8;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
 }
 
 .precio-destacado {
-    font-size: 1.4rem;
-    color: #e67e22; /* Color tostado/naranja */
-    font-weight: bold;
-    margin-top: 15px;
+    font-size: 1.3rem;
+    color: #e67e22;
+    font-weight: 800;
+    margin-top: 5px;
 }
 
-/* --- SECCIÓN DE RESERVAS (CAFÉ RÚSTICO) --- */
+.flecha-rustica {
+    background-color: #e67e22 !important;
+    background-size: 60%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+
+
 .seccion-cafe-rustico {
-    /* Un color café oscuro, cálido y elegante */
     background-color: #3b2f2f;
 }
 
-/* Tipografía de los datos a la izquierda */
 .info-minimalista p {
     letter-spacing: 1px;
 }
 
-/* Contenedor del formulario */
 .formulario-reserva {
-    background-color: rgba(0, 0, 0, 0.15); /* Un sutil oscurecimiento de fondo */
+    background-color: rgba(0, 0, 0, 0.15);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Estilos de inputs minimalistas (Línea inferior) */
 .input-minimalista {
     background-color: transparent !important;
     border: none !important;
@@ -84,33 +111,30 @@ html {
     transition: border-color 0.3s ease;
 }
 
-/* Cuando el usuario hace clic en el input */
 .input-minimalista:focus {
     border-bottom: 1px solid #ffffff !important;
 }
 
-/* Color del texto falso (Placeholder) */
 .input-minimalista::placeholder {
     color: rgba(255, 255, 255, 0.6) !important;
     font-weight: 300;
 }
 
-/* Ajuste específico para el selector desplegable (para que muestre el texto gris/blanco por defecto) */
 select.input-minimalista {
     color: rgba(255, 255, 255, 0.6) !important;
 }
 select.input-minimalista option {
-    background-color: #ffffff; /* Fondo blanco al desplegar las opciones */
+    background-color: #ffffff;
 }
 
-/* --- ICONOS DE REDES SOCIALES --- */
+
 .icono-social {
-    color: rgba(255, 255, 255, 0.7); /* Blanco con un poco de transparencia */
-    font-size: 1.8rem; /* Tamaño de los iconos */
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.8rem;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .icono-social:hover {
-    color: #e67e22; /* El mismo color anaranjado de los precios para mantener coherencia */
-    transform: translateY(-5px); /* Pequeño saltito hacia arriba */
+    color: #e67e22;
+    transform: translateY(-5px);
 }
